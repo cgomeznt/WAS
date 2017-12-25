@@ -176,4 +176,14 @@ Nos conectamos a la consola http://192.168.56.10:9060/ibm/console.:
 
 .. figure:: ../images/39.png
 
+Para detenerlo.::
+
+	$ /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopServer.sh server1
+	ADMU0116I: La información de la herramienta se está anotando en el archivo
+		   /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1/stopServer.log
+	ADMU0128I: Iniciando herramienta con el perfil AppSrv01
+	ADMU3100I: Leyendo la configuración para el servidor: server1
+	ADMU3201I: Se ha emitido una petición de detención del servidor. Esperando el
+		   estado de detención.
+	ADMU4000I: La detención del servidor server1 ha finalizado.
 

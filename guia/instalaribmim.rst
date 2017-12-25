@@ -16,7 +16,7 @@ Creamos un usuario para ejecutar la instalacion.::
 	Vuelva a escribir la nueva contraseña: 
 	passwd: todos los tokens de autenticación se actualizaron exitosamente.
 
-Debemos configurar el sshd para que se pueda hacer X11 forward, motivado que vamos a requerir las X para esta instalacion.:
+Debemos configurar el sshd para que se pueda hacer X11 forward, motivado que vamos a requerir las X para esta instalacion.::
 
 	# vi /etc/ssh/sshd_config
 	     X11Forwarding yes
