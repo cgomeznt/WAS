@@ -1,0 +1,19 @@
+Instalar WAS desde consola y crear el Profile
+==============================================
+
+websphere install 
+++++++++++++++++++
+
+	./install -acceptLicense --launcher.ini silent-install.ini -log install.log
+
+	./launcher 
+
+	./imcl  listAvailablePackages -repositories /opt/IBM/was8/repository.config
+
+	./imcl -acceptLicense install com.ibm.websphere.DEVELOPERS.v80_8.0.0.20110503_0200 -repositories /opt/IBM/was8/repository.config
+
+
+Crear Profile
++++++++++++++
+
+	./manageprofiles.sh  -create -startingPort 9051 -profileName D9051 -profilePath /opt/IBM/WebSphere/profiles/D9051 -hostName localhost

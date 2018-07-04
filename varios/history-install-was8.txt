@@ -1,0 +1,232 @@
+   23  ip addr
+   24  sudo /etc/selinux/config 
+   25  sudo vi /etc/selinux/config 
+   26  sudo service iptables status
+   27  sudo shutdown -r now
+   28  ip addr
+   29  sudo su - root
+   30  ip addr
+   31  sudo ifup eth0
+   32  ip addr
+   33  yum search vim
+   34  yum update
+   35  ip addr
+   36  sudo yum update
+   37  sudo yum upgrade
+   38  ip addr
+   39  sudo chkconfig network on
+   40  vi /etc/sysconfig/network-scripts/ifcfg-eth0 
+   41  sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0 
+   42  ls -l
+   43  sudo shutdown -r now
+   44  ls- l
+   45  ls -l
+   46  ip addr
+   47  shutdown -h now
+   48  sudo shutdown -h now
+   49  ip addr
+   50  ifup eth1
+   51  service network status
+   52  sudo ifup eth1
+   53  sudo service network restart
+   54  sudo ifup eth1
+   55  clear
+   56  ls -l
+   57  sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
+   58  ip addr
+   59  sudo vi /etc/sysconfig/network-scripts/ifcfg-eth1
+   60  ip addr
+   61  sudo vi /etc/sysconfig/network-scripts/ifcfg-eth1
+   62  ip addr
+   63  sudo vi /etc/sysconfig/network-scripts/ifcfg-eth1
+   64  ip addr
+   65  ifup eth1
+   66  sudo ifup eth1
+   67  ip addr
+   68  vim /etc/sysconfig/network-scripts/ifcfg-eth1 
+   69  sudo vi /etc/sysconfig/network-scripts/ifcfg-eth1 
+   70  ip addr
+   71  ping 192.168.1.66
+   72  ls -l
+   73  ip addr
+   74  sudo ifdown eth1
+   75  ip addr
+   76  sudo yum install vim
+   77  sudo yum install lynx
+   78  sudo service netwrok restart
+   79  sudo service network restart
+   80  ip addr
+   81  sudo yum install lynx
+   82  sudo vi /etc/sysconfig/network-scripts/ifcfg-eth1 
+   83  sudo shutdown -r now
+   84  ls -la
+   85  ls -l
+   86  ls -la
+   87  sudo xauth list
+   88  sudo yum search xauth
+   89  sudo yum install xorg-x11-xauth.x86_64 vim xclock
+   90  sudo yum install llynx
+   91  yum install vim
+   92  sudo yum install vim
+   93  sudo yum install xorg-x11-xauth.x86_64 vim xclock
+   94  vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+   95  mv /etc/sysconfig/network-scripts/ifcfg-eth1 /etc/sysconfig/network-scripts/ifcfg-eth1_BCK
+   96  sudo mv /etc/sysconfig/network-scripts/ifcfg-eth1 /etc/sysconfig/network-scripts/ifcfg-eth1_BCK
+   97  ipaddr
+   98  ip addr
+   99  sudo shutdown -h now
+  100  ls-l
+  101  ls -l
+  102  ip addr
+  103  ifup eth0
+  104  sudo ifup eth0
+  105  ip addr
+  106  sudo vim /etc/sysconfig/network-scripts/ifcfg-eth0 
+  107  ping 192.168.1.66
+  108  ping www.google.com
+  109  yum install lynx
+  110  sudo yum install lynx
+  111  ls -la
+  112  xclock 
+  113  ls -l
+  114  cat /etc/redhat-release 
+  115  uname -r
+  116  rpm -qa | grep ia32
+  117  rpm -qa | grep swt
+  118  ls -l
+  119  sudo yum install scp
+  120  sudo yum whatprovides scp
+  121  sudo yum istall openssh
+  122  sudo yum install openssh
+  123  sudo yum install openssh-clients
+  124  ls -l
+  125  mkdir  Installation-Manager-Install
+  126  mv agent.installer.linux.gtk.x86_1.6.2000.20130301_2248.zip Installation-Manager-Install/
+  127  ls -l
+  128  mkdir WAS-8.0-Install-Packages
+  129  mv was.repo.8550.basetrial_part1.zip was.repo.8550.basetrial_part2.zip was.repo.8550.basetrial_part3.zip WAS-8.0-Install-Packages/
+  130  ls -l
+  131  rm file.txt 
+  132  mkdir WAS-8.0-FP9
+  133  mv 8.0.0-WS-WAS-FP0000009-part1.zip 8.0.0-WS-WAS-FP0000009-part2.zip WAS-8.0-FP9/
+  134  ls -l
+  135  cd /opt/
+  136  ls -l
+  137  mkdir -p IBM
+  138  sudo mkdir -p IBM
+  139  ls -l
+  140  sudo chown oracle:oinstall IBM/ -R
+  141  ls -l
+  142  cd IBM/
+  143  ls -l
+  144  cd /home/oracle/
+  145  ls -l
+  146  cd Installation-Manager-Install/
+  147  ls -l
+  148  xcl
+  149  xclock 
+  150  sudo yum install unzip
+  151  ls -l
+  152  unzip agent.installer.linux.gtk.x86_1.6.2000.20130301_2248.zip 
+  153  ls -l
+  154  cd ..
+  155  ls -l
+  156  cd /opt/IBM/
+  157  ls -l
+  158  pwd
+  159  cd -
+  160  cd WAS-8.0-Install-Packages
+  161  ls -l
+  162  cd ..
+  163  ls -l
+  164  cd Installation-Manager-Install/
+  165  ls -l
+  166  cd configuration/
+  167  ls -l
+  168  vim config.ini 
+  169  cd ..
+  170  ls -l
+  171  cd con
+  172  cd configuration/
+  173  ls -l
+  174  cd org.eclipse.update/
+  175  ls -l
+  176  cat platform.xml 
+  177  cd ..
+  178  ls -l
+  179  ./install
+  180  cd /lib
+  181  ls -l
+  182  cd -
+  183  ls -l
+  184  sudo ./install
+  185  ls -l
+  186  sudo install
+  187  sudo ./install
+  188  ./userinst
+  189  sudo yum whatprovides
+  190  sudo yum whatprovides ld-linux.so.2
+  191  rpm -qa | grep glibc
+  192  uname -a
+  193  sudo yum remove glibc-common-2.12-1.192.el6.x86_64 glibc-2.12-1.192.el6.x86_64
+  194  ls -l
+  195  uname -a
+  196  cd configuration/
+  197  vim config.ini 
+  198  cd ..
+  199  ./userinst
+  200  cd configuration/
+  201  vim config.ini 
+  202  cd ..
+  203  ls -l
+  204  yum whatprovides ld-linux.so.2
+  205  free -mh
+  206  ls -l
+  207  ./userinst
+  208  shutdown -h now
+  209  sudo shutdown -h now
+  210  yum search glibc.i686
+  211  rpm -qa | grep glib
+  212  yum search glibc-2.12-1.192.el6
+  213  yum info glibc
+  214  yum install glibc
+  215  sudo yum install glibc.i686
+  216  rpm -qa | grep glibc
+  217  sudo yum install glibc-common.i686
+  218  ls -l
+  219  cd Installation-Manager-Install/
+  220  ls l-
+  221  ls -l
+  222  free -m
+  223  ls -l
+  224  ./userinst
+  225  sudo yum whatprovides libgcc_s.so.1
+  226  rpm -qa | grep libgcc
+  227  sudo yum install libgcc-4.4.7-17.el6.i686
+  228  free -m
+  229  ls -l
+  230  ./userinst
+  231  ls -l /home/oracle/Installation-Manager-Install/configuration/org.eclipse.osgi/bundles/445/1/.cp/libswt-pi-gtk-4234.so
+  232  sudo yum whatprovides libgtk-x11-2.0.so.0
+  233  rpm -qa | grep gtk2
+  234  rpm -qa | grep gtk
+  235  sudo yum install gtk2-2.18.9-6.el6.i686
+  236  ls -l
+  237  ./userinst
+  238  sudo yum whatprovides libXtst.so.6:
+  239  sudo yum whatprovides libXtst.so.6
+  240  sudo yum install libXtst-1.2.2-2.1.el6.i686
+  241  ./userinst
+  242  ls -l
+  243  ./install
+  244  ls -l
+  245  cd configuration/
+  246  ls -l
+  247  vim config.ini 
+  248  cd ..
+  249  sudo su - root
+  250  sudo yum install dejavu-lgc-sans-fonts
+  251  cd Installation-Manager-Install/
+  252  ./userinst
+  253  history 
+

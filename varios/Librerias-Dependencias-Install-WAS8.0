@@ -1,0 +1,8 @@
+sudo yum install glibc.i686
+sudo yum install glibc-common.i686
+sudo yum install libgcc-4.4.7-17.el6.i686
+sudo yum install gtk2-2.18.9-6.el6.i686
+sudo yum install libXtst-1.2.2-2.1.el6.i686
+sudo yum install dejavu-lgc-sans-fonts
+
+sudo yum install glibc-common.i686 libgcc-4.4.7-17.el6.i686 gtk2-2.18.9-6.el6.i686 libXtst-1.2.2-2.1.el6.i686 dejavu-lgc-sans-fonts

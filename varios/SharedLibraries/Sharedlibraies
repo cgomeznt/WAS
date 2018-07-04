@@ -1,0 +1,26 @@
+Para crear las Shared Libraries
+===============================
+
+Para crear
+
+Enviroment -> Share libraries -> new
+
+Scope 		- lo debe traer
+Name		- Le asociamos un nombre
+Descriptcion	- Si se requiere
+Classpath	- Le indicamos la ruta de las librerias
+
+Para modificar
+
+Enviroment -> Share libraries -> Select la Libreria que esta creada - WCONTROLLER_LIB
+General Properties
+	Scope 
+	cells:srvscm02Node03Cell:nodes:srvscm02Node03:servers:server4 
+
+Description 
+
+	Classpath
+	/u02/app/oracle/domain/EAR_Weblogic/9004/lib_wcontroller
+
+
+

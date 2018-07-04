@@ -1,0 +1,14 @@
+Clear cache WAS
+The following commands can be executed which will ensure cleaning the WebSphere Application Server cache:
+
+	WSAS_HOME/profiles/profile_name/bin/clearClassCache.bat/.sh
+
+	WSAS_HOME/profiles/profile_name/bin/osgiCfgInit.bat/.sh
+
+In addition to the above, clear everything from the following locations, do not remove the directory itself, just the contents
+
+	WAS_HOME/profiles/profile_name/wstemp
+
+	WAS_HOME/profiles/profile_name/temp
+
+	WAS_HOME/profiles/profile_name/config/temp

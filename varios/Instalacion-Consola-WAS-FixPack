@@ -1,0 +1,46 @@
+
+
+./imcl -sVP -updateAll -installFixes recommended -installationDirectory /opt/IBM/WebSphere/AppServer/ -repositories /opt/IBM/repository/FP9
+
+./imcl rollback com.ibm.websphere.DEVELOPERS.v80_8.0.9.20140530_2152 -installationDirectory /opt/IBM/WebSphere/AppServer
+
+./imcl install com.ibm.websphere.DEVELOPERS.v80 -repositories /opt/IBM/repository/was8.0 -installationDirectory /opt/IBM/WebSphere/AppServer -sharedResourcesDirectory /opt/IBM/IMShared -acceptLicense -showProgress
+
+================================================================================================
+
+# Install IM
+unzip -qd /tmp/im /tmp/Install*.zip
+
+/tmp/im/installc -acceptLicense -accessRights admin \
+-installationDirectory "/opt/IBM/InstallationManager" \
+-dataLocation "/var/ibm/InstallationManager" -showProgress
+
+
+# Install WAS 8.0.0.0 Developer
+yum install ld-linux.so.2
+yum install libgcc
+yum install libgcc.i686
+
+unzip WAS-8.0-InstallationPackages.zip
+
+/opt/IBM/InstallationManager/eclipse/tools/imcl -showProgress \
+-acceptLicense install com.ibm.websphere.DEVELOPERS.v80 \
+-repositories /tmp/was/repository.config \
+-installationDirectory /opt/IBM/WebSphere/AppServer
+
+# Install WAS-Fix-9 Developer
+
+unzip 8.0.0-WS-WAS-FP0000009-part1.zip  8.0.0-WS-WAS-FP0000009-part2.zip
+
+/opt/IBM/InstallationManager/eclipse/tools/imcl -showProgress \
+-acceptLicense install com.ibm.websphere.DEVELOPERS.v80 \
+-repositories /tmp/FIX-9/repository.config \
+-installationDirectory /opt/IBM/WebSphere/AppServer
+
+# Create AppServer Profile
+/opt/IBM/WebSphere/AppServer/bin/managerprofiles.sh -create -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default/ -profileName AppSrv01 -profilePath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+
+
+# Start
+
+/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startServer.sh server1

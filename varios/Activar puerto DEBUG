@@ -1,0 +1,71 @@
+Debugging remotely on an application server
+===============================================
+
+https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.8.1/com.ibm.odm.dserver.rules.res.managing/topics/tsk_res_debug_remote_appserv.html
+
+You can remotely debug a Rule Execution Server application and ruleset deployed on an application server.
+
+About this task
++++++++++++++++++
+
+If you deploy a Rule Execution Server application on an application server and want to debug the application from Rule Designer, the remote debugger can connect to the application server and debug the application and the ruleset.
+
+For every engine associated with the ruleset, Rule Execution Server tries to connect the engine to the debugger when retrieving that engine from the connection pool. Then, Rule Execution Server closes the connection to the debugger when it is returned to the pool.
+
+Note:
+Without a debugger, you can read error messages from the application server error log. You can look at the execution unit (XU) log from the Rule Execution Server console.
+For more information about debugging on Java™ platforms, see the Java Platform Debugger Architecture (JPDA) page.
+
+Procedure
++++++++++
+
+1. After your Rule Project for RuleApps is built in Rule Designer, install it to the target application server.
+Such installation usually involves deploying the EAR file. Typically, you can copy the EAR file and paste it into this directory: <SERVER_HOME>/server/<jrulessamples>/deploy.
+
+2. Open the rule project that is associated with the Rule Project for RuleApps, and extract a RuleApp from it.
+3. Create a Rule Execution Server Configuration, if it does not already exist.
+4. Start the application server.
+5. Deploy the previously extracted RuleApp to the running application server.
+6. Enable debug mode of the deployed ruleset in the Rule Execution Server console.
+7. Start a browser and enter the address where the enterprise application is deployed.
+For example:
+	WebSphere® Application Server: http://localhost:PORT/ Application_Name
+	WebLogic Server: http://localhost:PORT/ Application_Name
+	Tomcat: http://localhost:PORT/ Application_Name
+8. Use the Rule Execution Server console to test the ruleset execution:
+	Enter ruleset parameter values.
+	Execute the ruleset.
+9. View the ruleset execution statistics.
+You can reset the execution statistics at any time. You might find it useful if you want to measure a single ruleset execution.
+
+10. In Rule Designer , click Run  > Debug Configurations.
+11. In the Configurations area of the Debug Configurations dialog, under Remote Java Application with Rules, click the Configuration_Name that you defined in the debugger launch configuration task.
+
+12. Enable debug mode on the application server.
+	WebSphere Application Server 8.5 and 8.5.5:
+	a. Using a browser, open the administration console of the remote application server.
+	b. Expand the Servers node and click Application Servers. Click the name of the server to open the application server properties.
+	c. Click Debugging Service.
+	d. Click the Startup check box. By default, the service uses port 7777 to receive a connection from the debugger client.
+	e. Click Apply and then save the configuration.
+	f. Stop the application server if it is running.
+	g. Start the application server. This time, the server starts in debug mode and takes a little longer to start.
+
+	WebLogic Server 10 and 12:
+	a. Locate startWeblogic.[cmd|sh] and add the following variable DEBUG_OPTS:
+	set DEBUG_OPTS=-Xdebug - Xrunjdwp:transport=dt_socket,address=7777,server=y,suspend=y -Dilog.rules.engine.sequential.debug=true
+
+	b. Add the new variable to the WebLogic Server startup command after %JAVA_HOME%\bin\java and preferably before the other options.
+	Your startup script should look like this:
+
+	“%JAVA_HOME%\bin\java” %DEBUG_OPTS% %JAVA_VM% %MEM_ARGS% %JAVA_OPTIONS%
+	-Dweblogic.Name=%SERVER_NAME% 
+	-Dweblogic.management.username= %WLS_USER%
+	-Dweblogic.management.password= %WLS_PW% 
+	-Dweblogic.management.server= %ADMIN_URL%
+	-Dweblogic.ProductionModeEnabled= %PRODUCTION_MODE%
+	-Djava.security.policy= "%WL_HOME%\server\lib\weblogic.policy" weblogic.Server
+
+
+Start the application server.
+Click Debug.

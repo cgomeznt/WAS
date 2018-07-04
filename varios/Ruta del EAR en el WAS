@@ -1,0 +1,31 @@
+Ruta del EAR en el WAS
+=========================
+
+By default the App Servers read the applications from PROFILE_HOME/installedApps/CELL_NAME. The actual .ear file is installed in PROFILE_HOME/config/cells/CELL_NAME/applications
+
+
+[oracle@srvscm03 WebSphere_RIMAC_9001]$ ls -lh /opt/IBM/WebSphere/profiles/D9001/config/cells/D9001Cell/applications/CONSIS.ear
+total 243M
+-rw-r--r-- 1 oracle oinstall 243M ene  8 09:59 CONSIS.ear
+drwxr-xr-x 3 oracle oinstall 4,0K oct 31 17:02 deltas
+drwxr-xr-x 3 oracle oinstall 4,0K oct 31 17:02 deployments
+
+
+[oracle@srvscm03 WebSphere_RIMAC_9001]$ md5sum /opt/IBM/WebSphere/profiles/D9001/config/cells/D9001Cell/applications/CONSIS.ear/CONSIS.ear 
+8b7767730676822aa639e8ed72d9748a  /opt/IBM/WebSphere/profiles/D9001/config/cells/D9001Cell/applications/CONSIS.ear/CONSIS.ear
+
+NOTA: el md5 del EAR en el repositorio nunca es igual al original EAR
+
+Ejemplo de Rutas de los EAR:
+++++++++++++++++++++++++++++
+
+
+/opt/IBM/WebSphere/profiles/D9001/config/cells/D9001Cell/applications/CONSIS.ear
+/opt/IBM/WebSphere/profiles/D9001/config/cells/D9001Cell/applications/CONSIS.ear/CONSIS.ear
+
+
+/opt/IBM/WebSphere/profiles/D9004/config/cells/srvscm02Node03Cell/applications/CONSIS_26102017.ear
+/opt/IBM/WebSphere/profiles/D9004/config/cells/srvscm02Node03Cell/applications/CONSIS_26102017.ear/CONSIS_26102017.ear
+
+
+/opt/IBM/WebSphere/profiles/D9004/config/cells/srvscm02Node03Cell/applications/sample_war.ear/sample_war.ear

@@ -1,0 +1,10 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      6 02/07/18 18:37:55:098 GMT-04:00 02/07/18 18:37:55:610 GMT-04:00 org.omg.CORBA.TRANSIENT com.ibm.ws.orbimpl.transport.WSTransport.getConnection 448 /home/oracle/scm/jython/./client_ffdc/ffdc.9153888574825202956.txt
+     1      6 02/07/18 18:37:55:419 GMT-04:00 02/07/18 18:37:55:610 GMT-04:00 org.omg.CORBA.TRANSIENT com.ibm.ws.naming.util.WsnInitCtxFactory.getCosRootContext 1402 /home/oracle/scm/jython/./client_ffdc/ffdc.603084062179428104.txt
+     2      2 02/07/18 18:37:55:488 GMT-04:00 02/07/18 18:37:55:524 GMT-04:00 javax.naming.ServiceUnavailableException com.ibm.ws.management.connector.rmi.RMIConnectorClient.reconnect 237 /home/oracle/scm/jython/./client_ffdc/ffdc.6500371490057584215.txt
+     3      1 02/07/18 18:37:55:524 GMT-04:00 02/07/18 18:37:55:524 GMT-04:00 java.lang.reflect.InvocationTargetException com.ibm.websphere.management.AdminClientFactory.createAdminClient 267 /home/oracle/scm/jython/./client_ffdc/ffdc.7073044603109661822.txt
+     4      2 02/07/18 18:37:55:584 GMT-04:00 02/07/18 18:37:55:610 GMT-04:00 java.io.IOException com.ibm.ws.management.connector.jsr160rmi.JSR160RMIConnectorClient.reconnect 179 /home/oracle/scm/jython/./client_ffdc/ffdc.3108553124577684157.txt
+     5      1 02/07/18 18:37:55:610 GMT-04:00 02/07/18 18:37:55:610 GMT-04:00 java.lang.reflect.InvocationTargetException com.ibm.websphere.management.AdminClientFactory.createAdminClient 275 /home/oracle/scm/jython/./client_ffdc/ffdc.1928145539071747334.txt
+------+------+---------------------------+---------------------------+---------------------------

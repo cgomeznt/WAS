@@ -1,0 +1,6 @@
+./WebSphere/profiles/D9004/installedApps/srvscm02Node03Cell/CONSIS_26102017.ear/CustService.war/WEB-INF/classes/log4j.properties
+./WebSphere/profiles/D9002/installedApps/srvscm02Node01Cell/CONSIS.ear/CustService.war/WEB-INF/classes/log4j.properties
+./WebSphere/profiles/D9003/installedApps/srvscm02Node02Cell/CONSIS.ear/CustService.war/WEB-INF/classes/log4j.properties
+./WebSphere/profiles/D9001/installedApps/D9001Cell/CONSIS.ear/CustService.war/WEB-INF/classes/log4j.properties
+./WebSphere/AppServer/deploytool/itp/plugins/org.apache.axis_1.4.0.v201005080400/lib/log4j.properties
+
